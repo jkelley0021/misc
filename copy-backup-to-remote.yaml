@@ -2,7 +2,7 @@
 
 
 - name: scp nightly tower backup to vNETtie server
-  host: centos7
+  hosts: centos7
   gather_facts: no
   become: yes
 
