@@ -13,9 +13,9 @@
     - name: Copy file
       copy:
         #src: /home/admin9/sample.txt
-        src: /root/ansible-tower-setup-3.6.0-1/tower-backup-2020-03-07-22:56:47.tar.gz
+        src: /root/ansible-tower-setup-3.6.0-1/backups/tower-backup-2020-03-07-22:56:47.tar.gz
         # dest: /home/admin9/sample.txt
-        dest: /192.168.0.192/scp-root/ansible-tower/tower-backup-2020-03-07-22:56:47.tar.gz
+        dest: /192.168.0.192/scp-root/ansible-tower/backups/tower-backup-2020-03-07-22:56:47.tar.gz
         remote_src: no
 
 ...
