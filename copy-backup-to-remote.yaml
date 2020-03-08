@@ -10,7 +10,7 @@
   tasks:
 
 
-    - name: Copy file with owner and permissions
+    - name: Copy file
       copy:
         src: /home/admin9/sample.txt
         # src: /root/ansible-tower-setup-3.6.0-1/tower-backup-2020-03-06-08:00:18.tar.gz
