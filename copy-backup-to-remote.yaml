@@ -1,8 +1,8 @@
 ---
 
 
-- name: scp nightly tower backup to vNETtie server
-  hosts: centos7
+- name: scp nightly tower backup to remote server
+  hosts: localhost
   gather_facts: no
   become: yes
 
@@ -13,8 +13,6 @@
       copy:
         src: /root/ansible-tower-setup-3.6.0-1/tower-backup-2020-03-06-08:00:18.tar.gz
         dest: /192.168.0.192/scp-root/ansible-tower/
-        owner: root
-        group: root
-        mode: '0644'
+        remote_src: no
 
 ...
