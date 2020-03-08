@@ -19,7 +19,7 @@
     - name: Copy file
       copy:
         src: /var/lib/awx/backups/tower-backup-2020-03-06-08:00:18.tar.gz
-        dest: /192.168.0.192/scp-root/ansible-tower/
+        dest: /192.168.0.192/scp-root/ansible-tower/tower-backup-2020-03-06-08:00:18.tar.gz
         remote_src: no
 
 ...
