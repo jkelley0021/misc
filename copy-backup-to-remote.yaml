@@ -10,6 +10,12 @@
   tasks:
 
 
+    - name: Create a directory if it does not exist
+      file:
+        path: /192.168.0.192/scp-root/ansible-tower/
+        state: directory
+        mode: '0755'
+
     - name: Copy file
       copy:
         src: /var/lib/awx/backups/tower-backup-2020-03-07-23:43:08.tar.gz
