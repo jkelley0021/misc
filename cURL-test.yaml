@@ -1,0 +1,50 @@
+---
+
+- name: cURL test
+  hosts: localhost
+
+
+  tasks:
+    
+    
+    - name: return only the http headers of a url
+      uri:
+        url: 'http://192.168.0.167'
+        method: get
+      register: result
+
+
+    - name: retrieve resources from a particular URL
+      uri:
+        url: 'http://192.168.0.167'
+        method: GET
+      register: result
+
+    - name: Pre-upgrade tasks
+      uri:
+        url: 'https://HOST/api/v1/extrahop/cluster'
+        method: PATCH
+        body:
+          ingest_enabled: false
+        body_format: json
+        headers:
+          accept: application/json
+          Authorization: 'ExtraHop apikey=YOUR_KEY'
+          Content-Type: application/json
+      register: result
+
+
+    - name: Post-upgrade tasks
+      uri:
+        url: 'https://HOST/api/v1/extrahop/cluster'
+        method: PATCH
+        body:
+          ingest_enabled: false
+        body_format: json
+        headers:
+          accept: application/json
+          Authorization: 'ExtraHop apikey=YOUR_KEY'
+          Content-Type: application/json
+      register: result
+ 
+...
