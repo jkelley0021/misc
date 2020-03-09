@@ -12,7 +12,7 @@
 
     - name: Copy file
       copy:
-        src: /root/tower-backups/tower-backup-2020-03-08-20:38:47.tar.gz
+        src: /root/tower-backups/tower-backup-2020-03-08-20:49:55.tar.gz
         dest: /scp-root/ansible-tower/
         remote_src: no
 
