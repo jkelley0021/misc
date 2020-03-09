@@ -1,0 +1,19 @@
+---
+
+
+- name: copy nightly tower backup to remote server
+  hosts: 192.168.0.192
+  gather_facts: no
+  become: yes
+
+
+  tasks:
+
+
+    - name: Copy file
+      copy:
+        src: /var/lib/awx/backups/tower-backup-2020-03-08-01:15:24.tar.gz
+        dest: /scp-root/ansible-tower/
+        remote_src: no
+
+...
