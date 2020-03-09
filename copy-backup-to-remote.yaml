@@ -2,7 +2,7 @@
 
 
 - name: copy nightly tower backup to remote server
-  hosts: 127.0.0.1
+  hosts: 192.168.0.192
   gather_facts: no
   become: yes
 
@@ -10,16 +10,10 @@
   tasks:
 
 
-   # - name: Create a directory if it does not exist
-    #  file:
-     #   path: /192.168.0.192/scp-root/ansible-tower/
-      #  state: directory
-       # mode: '0755'
-
     - name: Copy file
       copy:
         src: /var/lib/awx/backups/tower-backup-2020-03-08-01:15:24.tar.gz
-        dest: /192.168.0.192/scp-root/ansible-tower/
+        dest: /scp-root/ansible-tower/
         remote_src: no
 
 ...
