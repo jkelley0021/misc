@@ -10,6 +10,6 @@
 
 
     - name: backup tower
-      shell: /root/ansible-tower-setup-3.6.0-1/setup.sh -e 'backup_dest=/root/tower-backups' -b
+      shell: /root/ansible-tower-setup-3.6.0-1/setup.sh -e 'backup_dest=/var/lib/awx/backups2' -b
 
 ...
