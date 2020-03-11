@@ -20,6 +20,4 @@
         mode: '0644'
         remote_src: no
 
-    - name: empty the backup directory so as to only copy necessary files next run
-      shell: cd /var/lib/awx/backups && find -mindepth 1 -maxdepth 1 -print0 | xargs -0 rm -rf --
 ...
