@@ -12,7 +12,7 @@
 
     - name: Copy file with owner and permissions
       copy:
-        src: /var/lib/awx/backups/tower-backup-2020-03-12-00:00:36.tar.gz
+        src: /var/lib/awx/backups/jeff.txt
         #src: /var/lib/awx/backups/.
         dest: /scp-root/ansible-tower/
         #owner: root
