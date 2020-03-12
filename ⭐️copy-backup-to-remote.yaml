@@ -12,9 +12,9 @@
 
     - name: Copy file with owner and permissions
       copy:
-        src: /var/lib/awx/backups/jeff.txt
-        #src: /var/lib/awx/backups/.
-        dest: /scp-root/ansible-tower/
+        #src: /var/lib/awx/backups/jeff.txt
+        src: /var/lib/awx/backups/.
+        dest: /scp-root/ansible-tower/backups
         #owner: root
         #group: root
         #mode: '0644'
