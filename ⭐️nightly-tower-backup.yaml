@@ -11,6 +11,6 @@
 
     - name: backup tower
       shell: /root/ansible-tower-setup-3.6.3-1/setup.sh -e 'backup_dest=/var/lib/awx/backups' -b
-      # edit folder name above after every ansible tower upgrade
+      # edit directory name above after every ansible tower upgrade
 
 ...
