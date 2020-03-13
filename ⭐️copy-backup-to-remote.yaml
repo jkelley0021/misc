@@ -10,7 +10,7 @@
   tasks:
 
 
-    - name: Copy file with owner and permissions
+    - name: Copy nightly backup
       copy:
         src: /var/lib/awx/backups/.
         dest: /scp-root/ansible-tower/
