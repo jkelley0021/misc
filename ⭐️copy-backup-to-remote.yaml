@@ -23,5 +23,6 @@
         mode: '0600'
         remote_src: no
         force: no
+        sudo: yes
 
 ...
