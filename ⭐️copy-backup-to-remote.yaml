@@ -24,5 +24,6 @@
         remote_src: no
         force: no
         sudo: true
+        sudo password: Firetruck1!
 
 ...
