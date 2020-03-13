@@ -19,5 +19,6 @@
         src: /var/lib/awx/backups/.
         dest: /scp-root/ansible-tower/
         remote_src: no
+        force: no
 
 ...
