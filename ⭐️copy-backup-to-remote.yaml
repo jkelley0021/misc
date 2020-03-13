@@ -12,12 +12,11 @@
 
     - name: Copy file with owner and permissions
       copy:
-        #src: /var/lib/awx/backups/tower-backup-2020-03-12-13:54:39.tar.gz
         src: /var/lib/awx/backups/.
         dest: /scp-root/ansible-tower/
-        #owner: root
-        #group: root
-        #mode: '0644'
+        owner: root
+        group: root
+        mode: '0644'
         remote_src: no
 
 ...
