@@ -23,7 +23,5 @@
         mode: '0600'
         remote_src: no
         force: no
-        sudo: true
-        sudo password: Firetruck1!
 
 ...
