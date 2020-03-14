@@ -1,0 +1,16 @@
+---
+
+
+- name: edit file permissions to enable copying
+  hosts: localhost
+  gather_facts: no
+
+
+  tasks:
+
+
+    - name: edit permissions
+      file: path=/var/lib/awx/backups/ owner=awx group=awx mode=0777 state=directory recurse=yes
+
+
+...
