@@ -4,6 +4,7 @@
 - name: edit file permissions to enable copying
   hosts: localhost
   gather_facts: no
+  become: yes
 
 
   tasks:
