@@ -9,16 +9,12 @@
 
 
   tasks:
-  
-  
-    #- name: edit permissions to enable copying
-      #file: path=/var/lib/awx/backups/ owner=awx group=awx mode=0777 state=directory recurse=yes
 
 
     - name: copy nightly backup
       copy:
-        src: /scp-root/ansible-tower/
-        dest: ansible-tower-setup-3.6.3-1/
+        src: /scp-root/ansible-tower/tower-backup-2020-03-14-22:02:45.tar.gz
+        dest: /root/ansible-tower-setup-3.6.3-1/
         owner: root
         group: root
         mode: '0600'
