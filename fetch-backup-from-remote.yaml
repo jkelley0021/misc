@@ -14,8 +14,7 @@
     - name: fetch tower backup
       copy:
         src: /scp-root/ansible-tower/backups/tower-backup-2020-03-14-22:02:45.tar.gz
-        dest: /root/ansible-tower-setup-3.6.3-1/
-        # edit directory name above after every ansible tower upgrade
+        dest: /var/lib/awx/backups/
         owner: root
         group: root
         mode: '0600'
