@@ -15,6 +15,7 @@
       fetch:
         src: /scp-root/ansible-tower/backups/tower-backup-2020-03-12-23:00:55.tar.gz
         dest: /var/lib/awx/backups/tower-backup-2020-03-12-23:00:55.tar.gz
+        flat: yes
         
 
 ...
