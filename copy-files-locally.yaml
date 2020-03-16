@@ -1,0 +1,17 @@
+---
+
+
+- name: copy files locally
+  hosts: localhost
+  gather_facts: no
+
+
+  tasks:
+  - name: ansible copy file locally
+    copy:
+     src: /var/lib/awx/backups/
+     dest: /root/ansible-tower-setup-3.6.3-1
+    delegate_to: localhost
+
+
+...
