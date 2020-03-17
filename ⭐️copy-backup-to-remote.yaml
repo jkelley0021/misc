@@ -12,7 +12,7 @@
 
     - name: copy nightly backup
       copy:
-        src: /var/lib/awx/backups/.
+        src: /var/lib/awx/backups/. # the . copies the entire directory (including contents)
         dest: /scp-root/ansible-tower/
         owner: root
         group: root
