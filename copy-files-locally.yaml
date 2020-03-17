@@ -2,7 +2,7 @@
 
 
 - name: copy files locally
-  hosts: 127.0.0.1
+  hosts: localhost
   gather_facts: no
 
 
