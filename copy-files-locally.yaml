@@ -2,7 +2,7 @@
 
 
 - name: copy files locally
-  hosts: localhost  # was 127.0.0.1 previously
+  hosts: localhost  #was 127.0.0.1 previously
   gather_facts: no
 
 
@@ -13,9 +13,9 @@
     copy:
      src: /var/lib/awx/backups/.
      dest: /var/lib/awx/backups/backed-up
-     owner: root
-     group: root
-     mode: '0600'
+     #owner: root
+     #group: root
+     #mode: '0600'
      remote_src: no
     delegate_to: localhost
 
