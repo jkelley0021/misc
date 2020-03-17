@@ -9,10 +9,6 @@
   tasks:
 
 
-  - name: edit permissions
-    file: path=/var/lib/awx/backups/ owner=awx group=awx mode=0777 state=directory recurse=yes
-
-  
   - name: ansible copy file locally
     copy:
      src: /var/lib/awx/backups/
