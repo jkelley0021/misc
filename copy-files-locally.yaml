@@ -12,12 +12,14 @@
   - name: ansible copy file locally
     copy:
      src: /var/lib/awx/backups/
-     dest: /var/lib/awx/backups/backed-up
-     #owner: root
-     #group: root
-     #mode: '0600'
+     dest: /var/lib/awx/backed-up
      remote_src: no
     delegate_to: localhost
+
+  - name: Recursively remove directory
+    file:
+      path: /var/lib/awx/backups/
+      state: absent
 
 
 ...
