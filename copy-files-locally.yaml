@@ -4,7 +4,6 @@
 - name: copy files locally
   hosts: localhost
   gather_facts: no
-  become: yes
 
 
   tasks:
