@@ -2,7 +2,7 @@
 
 
 - name: nightly tower backup
-  hosts: localhost
+  hosts: localhost  # was 127.0.0.1 previously
   gather_facts: no
   become: yes
 
