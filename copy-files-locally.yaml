@@ -11,8 +11,12 @@
 
   - name: ansible copy file locally
     copy:
-     src: /var/lib/awx/backups/
+     src: /var/lib/awx/backups/.
      dest: /var/lib/awx/backups/backed-up
+     owner: root
+     group: root
+     mode: '0600'
+     remote_src: no
     delegate_to: localhost
 
 
