@@ -1,7 +1,7 @@
 ---
 
 
-- name: edit file permissions to enable Ansible to copy backup file owned by root
+- name: edit file permissions to enable Ansible to copy backup files owned by root
   hosts: localhost
   gather_facts: no
   become: yes
