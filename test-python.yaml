@@ -9,12 +9,13 @@
   tasks:
 
 
-  - mane: run python script  
+  - name: run python script  
     # default Python here
     - shell: echo hello
     #- set_fact:
     #    ansible_python_interpreter: /local/{{lookup('env', 'USER')}}/venv/bin/python
     # modified Python here
    # - shell: echo hello
+
 
 ...
