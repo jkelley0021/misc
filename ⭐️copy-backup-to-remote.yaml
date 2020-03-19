@@ -10,7 +10,7 @@
   tasks:
 
 
-    - name: copy nightly backup
+    - name: copy nightly backup files
       copy:
         src: /var/lib/awx/backups/.  # the . copies the entire directory (including contents)
         dest: /scp-root/ansible-tower/
