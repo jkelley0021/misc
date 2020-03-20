@@ -9,9 +9,6 @@
   tasks:
 
 
-  - environment:
-      PYTHONPATH: "/opt/rh/rh-python36/root/lib/python3.6/site-packages/
-
   - name: run python script  
     # default Python here
     shell: echo hello
