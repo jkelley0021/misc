@@ -10,7 +10,7 @@
 
 
   - name: run python script
-    script: test1.py
+    script: test.py
     #shell: echo hello
 
 
