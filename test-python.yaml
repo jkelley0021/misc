@@ -10,8 +10,7 @@
 
 
   - name: run python script locally
-    local_action: command python test.py 
-    #shell: echo hello
+    local_action: command python test.py
 
 
 ...
