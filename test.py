@@ -1,1 +1,1 @@
-print "Hey %s there." % "you"
+print ("hey there")
