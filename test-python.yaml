@@ -2,15 +2,15 @@
 ---
 
 - name: python test
-  hosts: 192.168.0.192
+  hosts: localhost
   gather_facts: no
 
   
   tasks:
 
 
-  - name: run python script
-    script: test.py
+  - name: run python script locally
+    local_action: command python scriptname.py 
     #shell: echo hello
 
 
