@@ -8,3 +8,6 @@ psutil-5.4.3.dist-info
 
 pip freeze > requirements.txt 
 pip install -r requirements.txt
+
+How Can I Use Virtual Environment with Python3 on RHEL 7 for Ansible Tower?
+https://access.redhat.com/solutions/4371201?band=se&seSessionId=0818fba5-95b5-44c1-862e-c9c6e63cb74d&seSource=Recommendation%20Aside&seResourceOriginID=ac4e8164-bc22-4a7f-adee-44cf6cf4a362
