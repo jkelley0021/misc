@@ -1,0 +1,3 @@
+#!/usr/bin/env python368-env
+
+ansible_python_interpreter: /opt/venvs/python368-env
