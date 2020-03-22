@@ -5,3 +5,6 @@ ansible_python_interpreter: /opt/venvs/python368-env
 /var/lib/awx/venv/ansible/lib/python2.7/site-packages/requests/adapters.py
 
 psutil-5.4.3.dist-info
+
+pip freeze > requirements.txt 
+pip install -r requirements.txt
