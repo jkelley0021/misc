@@ -1,3 +1,5 @@
 #!/usr/bin/env python368-env
 
 ansible_python_interpreter: /opt/venvs/python368-env
+
+/var/lib/awx/venv/ansible/lib/python2.7/site-packages/requests/adapters.py
