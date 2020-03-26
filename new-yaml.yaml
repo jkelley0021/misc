@@ -1,0 +1,15 @@
+---
+
+
+- name: 
+  hosts: 
+  connection: 
+  gather_facts: no
+
+  tasks:
+
+
+    - name: 
+
+
+...
