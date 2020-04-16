@@ -3,14 +3,12 @@
 
 - name: create service group
   hosts: 192.168.0.253
+  gather_facts: no
 
 
   tasks:
+   
     
-
-# The LB Monitors monitor-1 and monitor-2 must already exist
-# Service members defined by C(ip) must not redefine an existing server's ip address.
-# Service members defined by C(servername) must already exist.
     - name: Set up http service with ip members
       delegate_to: localhost
       netscaler_servicegroup:
