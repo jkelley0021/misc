@@ -1,0 +1,30 @@
+---
+
+
+- name: create vip
+  hosts: 192.168.0.253
+
+
+  tasks:
+    
+
+# Service group service-group-1 must have been already created with the netscaler_servicegroup module
+    - name: Create load balancing vserver bound to servicegroup
+      delegate_to: localhost
+      netscaler_lb_vserver:
+        nsip: 172.18.0.2
+        nitro_user: nsroot
+        nitro_pass: nsroot
+        validate_certs: no
+        state: present
+
+        name: lb_vserver_2
+        servicetype: HTTP
+        ipv46: 6.92.2.2
+        port: 80
+        timeout: 10
+        servicegroupbindings:
+            - servicegroupname: service-group-1
+
+
+...
