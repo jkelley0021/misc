@@ -1,0 +1,31 @@
+---
+
+
+- name: create service group
+  hosts: 192.168.0.253
+  gather_facts: no
+
+
+  tasks:
+
+    - name: Set lb monitor
+      local_action:
+        nsip: 192.168.0.253
+        nitro_user: nsroot
+        nitro_pass: nsroot
+        validate_certs: no
+
+
+        module: netscaler_lb_monitor
+        state: present
+
+
+
+        monitorname: dsl-http-ecv-monitor
+        type: HTTP-ECV
+        action: UP
+        send: GET /
+        recv: ['200']
+
+
+...
