@@ -22,13 +22,13 @@
         servicegroupname: service-group-1
         servicetype: HTTP
         servicemembers:
-          - ip: 10.78.78.78
+          - ip: 192.168.0.180
             port: 80
             weight: 50
-          - ip: 10.79.79.79
+          - ip: 192.168.0.187
             port: 80
             weight: 40
-          - servername: server-1
+          - servername: DSL-3
             port: 80
             weight: 10
 
