@@ -14,7 +14,7 @@
     - name: Set up http service with ip members
       delegate_to: localhost
       netscaler_servicegroup:
-        nsip: 172.18.0.2
+        nsip: 192.168.0.253 #management IP
         nitro_user: nsroot
         nitro_pass: nsroot
         state: present
