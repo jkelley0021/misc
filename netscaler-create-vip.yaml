@@ -3,12 +3,12 @@
 
 - name: create vip
   hosts: 192.168.0.253
+  gather_facts: no
 
 
   tasks:
     
 
-# Service group service-group-1 must have been already created with the netscaler_servicegroup module
     - name: Create load balancing vserver bound to servicegroup
       delegate_to: localhost
       netscaler_lb_vserver:
