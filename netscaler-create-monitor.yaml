@@ -1,7 +1,7 @@
 ---
 
 
-- name: create service group
+- name:
   hosts: 192.168.0.253
   gather_facts: no
 
@@ -15,10 +15,8 @@
         nitro_pass: nsroot
         validate_certs: no
 
-
         module: netscaler_lb_monitor
         state: present
-
 
 
         monitorname: dsl-http-ecv-monitor
