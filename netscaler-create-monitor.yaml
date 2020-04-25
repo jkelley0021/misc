@@ -23,7 +23,7 @@
         type: HTTP-ECV
         action: DOWN
         send: GET /
-        recv: ['200']
+        recv: '200'
 
 
 ...
