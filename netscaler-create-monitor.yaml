@@ -21,7 +21,7 @@
 
         monitorname: dsl-http-ecv-monitor
         type: HTTP-ECV
-        action: UP
+        action: DOWN
         send: GET /
         recv: ['200']
 
