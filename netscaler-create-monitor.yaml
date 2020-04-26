@@ -15,7 +15,7 @@
         nitro_pass: nsroot
         validate_certs: no
 
-        module: netscaler_lb_monitor
+        module: citrix_adc_lb_monitor
         state: present
 
 
