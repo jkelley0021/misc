@@ -11,13 +11,13 @@
 
 
     - name: create real
-      delegate_to: localhost
-      citrix_adc_server:
+      local_action:
         nsip: "{{ nsip }}"
         nitro_user: "{{ nitro_user }}"
         nitro_pass: "{{ nitro_pass }}"
         validate_certs: no
 
+        module: citrix_adc_server
         state: present
 
         name: server_1
