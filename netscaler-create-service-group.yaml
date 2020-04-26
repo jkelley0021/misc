@@ -14,8 +14,8 @@
       delegate_to: localhost
       citrix_adc_servicegroup:
         nsip: 192.168.0.253 #management IP
-        nitro_user: nsroot
-        nitro_pass: nsroot
+        nitro_user: ansible-api
+        nitro_pass: Firetruck1!
         state: present
 
         servicegroupname: DSL-servers-service-group
@@ -32,9 +32,9 @@
             weight: 10
 
         monitorbindings:
-          - monitorname: monitor-1
+          - monitorname: dsl-http-ecv-monitor
             weight: 50
-          - monitorname: monitor-2
+          - monitorname: dsl-http-ecv-monitor-2
             weight: 50
 
 
