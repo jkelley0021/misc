@@ -21,7 +21,7 @@
         state: present
 
 
-        monitorname: dsl-http-ecv-monitor
+        monitorname: dsl-http-ecv-monitor-2
         type: HTTP-ECV
         save_config: yes
 
