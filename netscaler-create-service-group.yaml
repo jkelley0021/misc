@@ -11,7 +11,7 @@
     
     - name: Set up http service with ip members
       delegate_to: localhost
-      netscaler_servicegroup:
+      citrix_adc_servicegroup:
         nsip: 192.168.0.253 #management IP
         nitro_user: nsroot
         nitro_pass: nsroot
