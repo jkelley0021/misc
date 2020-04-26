@@ -4,6 +4,7 @@
 - name: create vip
   hosts: localhost
   gather_facts: no
+  no_log: false
 
 
   tasks:
