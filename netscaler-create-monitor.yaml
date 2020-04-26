@@ -4,7 +4,7 @@
 - name:
   hosts: localhost
   gather_facts: no
-  
+  no_log: true
 
 
   tasks:
@@ -14,7 +14,6 @@
         nsip: 192.168.0.253
         nitro_user: ansible-api
         nitro_pass: Firetruck1!
-        no_log: true
         validate_certs: no
 
         module: citrix_adc_lb_monitor
