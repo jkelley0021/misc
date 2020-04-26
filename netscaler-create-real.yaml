@@ -12,6 +12,7 @@
 
     - name: create real
       delegate_to: localhost
+      netscaler_save_config:
       netscaler_server:
         nsip: "{{ nsip }}"
         nitro_user: "{{ nitro_user }}"
@@ -20,8 +21,8 @@
 
         state: present
 
-        name: server_2
-        ipaddress: 2.2.2.2
+        name: server_3
+        ipaddress: 3.3.3.3
         comment: yo yo yo
 
 
