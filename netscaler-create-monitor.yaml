@@ -9,6 +9,7 @@
 
   tasks:
 
+
     - name: Set lb monitor
       local_action:
         nsip: 192.168.0.253
