@@ -4,7 +4,7 @@
 - name:
   hosts: localhost
   gather_facts: no
-  no_log: false
+  no_log: true
 
 
   tasks:
