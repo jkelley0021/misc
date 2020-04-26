@@ -13,7 +13,7 @@
       local_action:
         nsip: 192.168.0.253
         nitro_user: ansible-api
-        nitro_pass: {{  password  }}
+        nitro_pass: Firetruck1!
         validate_certs: no
 
         module: citrix_adc_lb_monitor
