@@ -12,8 +12,8 @@
     - name: Set lb monitor
       local_action:
         nsip: 192.168.0.253
-        nitro_user: nsroot
-        nitro_pass: nsroot
+        nitro_user: ansible-api
+        nitro_pass: {{  password  }}
         validate_certs: no
 
         module: citrix_adc_lb_monitor
