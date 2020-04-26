@@ -2,7 +2,7 @@
 
 
 - name: create service group
-  hosts: 192.168.0.253
+  hosts: localhost
   gather_facts: no
 
 
