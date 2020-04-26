@@ -20,8 +20,9 @@
 
         state: present
 
-        name: server_1
-        ipaddress: 1.1.1.1
+        name: server_2
+        ipaddress: 2.2.2.2
+        comment: yo yo yo
 
 
 ...
