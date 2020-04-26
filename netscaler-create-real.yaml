@@ -1,0 +1,27 @@
+---
+
+
+- name: add real (a "real" VM or physical node to to load balanced)
+  hosts: localhost
+  gather_facts: no
+  no_log: false
+
+
+  tasks:
+
+
+    - name: create real
+      delegate_to: localhost
+      citrix_adc_server:
+        nsip: "{{ nsip }}"
+        nitro_user: "{{ nitro_user }}"
+        nitro_pass: "{{ nitro_pass }}"
+        validate_certs: no
+
+        state: present
+
+        name: server_1
+        ipaddress: 1.1.1.1
+
+
+...
