@@ -4,7 +4,7 @@
 - name: add real (a "real" VM or physical node to to load balanced)
   hosts: localhost
   gather_facts: no
-  no_log: true
+  no_log: false
 
 
   tasks:
