@@ -4,6 +4,7 @@
 - name:
   hosts: localhost
   gather_facts: no
+  no_log: true
 
 
   tasks:
@@ -13,7 +14,6 @@
         nsip: 192.168.0.253
         nitro_user: nsroot
         nitro_pass: nsroot
-        no_log: true
         validate_certs: no
 
         module: netscaler_lb_monitor
