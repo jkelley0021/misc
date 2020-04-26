@@ -5,7 +5,6 @@
   hosts: localhost
   gather_facts: no
   no_log: false
-  save_config: yes
 
 
   tasks:
@@ -26,6 +25,7 @@
         action: 'DOWN'
         send: GET /
         recv: '200'
+        save_config: yes
 
 
 ...
