@@ -11,7 +11,7 @@
 
     - name: Create load balancing vserver bound to servicegroup
       delegate_to: localhost
-      netscaler_lb_vserver:
+      citrix_adc_lb_vserver:
         nsip: 192.168.0.253 #management IP
         nitro_user: nsroot
         nitro_pass: nsroot
