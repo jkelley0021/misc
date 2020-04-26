@@ -20,10 +20,8 @@
         state: present
 
 
-        monitorname: monitor_1
-        type: HTTP-INLINE
-        action: DOWN
-        respcode: ['400']
+        monitorname: dsl-http-ecv-monitor
+        type: HTTP-ECV
         save_config: yes
 
 
