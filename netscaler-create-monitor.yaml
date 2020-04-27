@@ -19,11 +19,11 @@
 
         module: citrix_adc_lb_monitor
         state: present
-
-
-        monitorname: dsl-http-ecv-monitor-2
-        type: HTTP-ECV
         save_config: yes
+
+        monitorname: dsl-http-ecv-monitor-3
+        type: HTTP-ECV
+        
 
 
 ...
