@@ -21,9 +21,9 @@
         state: present
         save_config: yes
 
-        name: server_6
-        ipaddress: 6.6.6.6
-        comment: server 6
+        name: server_7
+        ipaddress: 7.7.7.7
+        comment: server 7
 
 
 ...
