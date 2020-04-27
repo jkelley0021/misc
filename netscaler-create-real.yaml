@@ -13,9 +13,9 @@
     - name: create real
       delegate_to: localhost
       citrix_adc_server:
-        nsip: "{{ nsip }}"
+        nsip: "{{  nsip  }}"
         nitro_user: ansible-api
-        nitro_pass: "{{ nitro_pass }}"
+        nitro_pass: Firetruck1!
         validate_certs: no
 
         state: present
