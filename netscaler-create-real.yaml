@@ -18,11 +18,11 @@
         validate_certs: no
 
         state: present
-        save_config: yes
 
         name: server 9
         ipaddress: 9.9.9.9
         comment: server 9
+        save_config: yes
 
 
 ...
