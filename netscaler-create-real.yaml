@@ -4,7 +4,6 @@
 - name: add real (a "real" VM or physical node to to load balanced)
   hosts: localhost
   gather_facts: no
-  no_log: false
 
 
   tasks:
@@ -21,9 +20,9 @@
         state: present
         save_config: yes
 
-        name: server_7
-        ipaddress: 7.7.7.7
-        comment: server 7
+        name: server 8
+        ipaddress: 8.8.8.8
+        comment: server 8
 
 
 ...
