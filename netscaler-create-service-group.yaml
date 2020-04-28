@@ -21,21 +21,25 @@
         servicegroupname: DSL-servers-service-group
         servicetype: HTTP
         servicemembers:
-          - ip: 192.168.0.180
-            port: 80
-            weight: 50
-          - ip: 192.168.0.187
-            port: 80
-            weight: 40
-          - servername: DSL-3
-            port: 80
-            weight: 10
+          mode: exact
+          attributes:
+            - ip: 192.168.0.180
+              port: 80
+              weight: 50
+            - ip: 192.168.0.187
+              port: 80
+              weight: 40
+            - servername: DSL-3
+              port: 80
+              weight: 10
 
         monitor_bindings:
-          - monitorname: dsl-http-ecv-monitor
-            weight: 50
-          - monitorname: dsl-http-ecv-monitor-2
-            weight: 50
+          mode: exact
+          attributes:
+            - monitorname: dsl-http-ecv-monitor
+              weight: 50
+            - monitorname: dsl-http-ecv-monitor-2
+              weight: 50
 
 
 ...
