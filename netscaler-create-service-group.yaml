@@ -4,7 +4,6 @@
 - name: create service group
   hosts: localhost
   gather_facts: no
-  no_log: false
 
 
   tasks:
