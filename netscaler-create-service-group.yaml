@@ -31,7 +31,7 @@
             port: 80
             weight: 10
 
-        monitorbindings:
+        monitor_bindings:
           - monitorname: dsl-http-ecv-monitor
             weight: 50
           - monitorname: dsl-http-ecv-monitor-2
