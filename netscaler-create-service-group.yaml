@@ -31,11 +31,11 @@
             port: 80
             weight: 10
 
-        monitorbindings:
-          - monitorname: dsl-http-ecv-monitor
-            weight: 50
-          - monitorname: dsl-http-ecv-monitor-2
-            weight: 50
+          monitorbindings:
+            - monitorname: dsl-http-ecv-monitor
+              weight: 50
+            - monitorname: dsl-http-ecv-monitor-2
+              weight: 50
 
 
 ...
