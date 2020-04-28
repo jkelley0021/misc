@@ -15,6 +15,7 @@
         nsip: 192.168.0.253 #management IP
         nitro_user: ansible-api
         nitro_pass: Firetruck1!
+        
         state: present
 
         servicegroupname: DSL-servers-service-group
