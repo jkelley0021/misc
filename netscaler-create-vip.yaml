@@ -18,13 +18,13 @@
         validate_certs: no
         state: present
 
-        name: lb_vserver_2
+        name: DSL-servers-VIP
         servicetype: HTTP
-        ipv46: 6.92.2.2
+        ipv46: 192.168.0.69
         port: 80
         timeout: 10
         servicegroupbindings:
-            - servicegroupname: service-group-1
+            - servicegroupname: DSL-service-group
 
 
 ...
