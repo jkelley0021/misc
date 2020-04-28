@@ -24,7 +24,7 @@
         port: 80
         timeout: 10
         servicegroupbindings:
-            - servicegroupname: DSL-service-group
+            - servicegroupname: DSL-servers-service-group
 
 
 ...
