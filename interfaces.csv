@@ -1,4 +1,4 @@
 ﻿port,vlan,state,protocol
-FastEthernet1,69,shutdown,no cdp enable
-FastEthernet2,69,shutdown,no cdp enable
-FastEthernet3,69,shutdown,no cdp enable
+1,69,shutdown,no cdp enable
+2,69,shutdown,no cdp enable
+3,69,shutdown,no cdp enable
