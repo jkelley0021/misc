@@ -1,4 +1,0 @@
-﻿port,vlan,state,protocol
-1,69,shutdown,no cdp enable
-2,69,shutdown,no cdp enable
-3,69,shutdown,no cdp enable
