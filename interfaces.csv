@@ -1,0 +1,4 @@
+﻿port,description,vlan,speed,duplex
+1,interface one,11,100,full
+2,interface two,22,10,half
+3,interface three,33,100,full
