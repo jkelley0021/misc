@@ -2,7 +2,7 @@
 
 
 - name: rdc aci cutover
-  hosts: 192.168.0.91
+  hosts: 192.168.0.94
 
 
   tasks:
