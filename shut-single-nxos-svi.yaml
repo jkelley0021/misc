@@ -10,7 +10,7 @@
 
   - name: shut one svi at a time on nxos
     nxos_config:
-      config: "{{ lookup('template', 'templates/core-shut-svi.j2') }}"
+      config: "{{ lookup('template', 'core-shut-svi.j2') }}"
     become: yes
     become_method: enable
 
