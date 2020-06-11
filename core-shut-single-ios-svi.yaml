@@ -1,7 +1,7 @@
 ---
 
 - name: rdc aci cutover
-  hosts: gns3
+  hosts: cutover
 
   tasks:
 
