@@ -1,18 +1,12 @@
 ---
 
-
 - name: rdc aci cutover
   hosts: 192.168.0.94
 
-
   tasks:
-
 
   - name: shut one svi at a time
     cli_config:
       config: "{{ lookup('template', 'templates/core-shut-svi.j2') }}"
-    become: yes
-    become_method: enable
-
 
 ...
