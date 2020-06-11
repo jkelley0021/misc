@@ -7,6 +7,6 @@
 
   - name: shut one svi at a time
     cli_config:
-      config: "{{ lookup('template', './core-shut-svi.j2') }}"
+      config: "{{ lookup('template', 'core-shut-svi.j2') }}"
 
 ...
