@@ -1,0 +1,12 @@
+---
+
+- name: erd-01
+  hosts: vb2-cut
+
+  tasks:
+
+  - name: decom vb2 configs
+    cli_config:
+      config: "{{ lookup('template', 'templates/vb2-erd01-decom.j2') }}"
+
+...
