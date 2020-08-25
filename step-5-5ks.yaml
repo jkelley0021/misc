@@ -1,0 +1,12 @@
+---
+
+- name: step-5-5ks
+  hosts: 5k-grp
+
+  tasks:
+
+  - name: shut port channels
+    cli_config:
+      config: "{{ lookup('template', 'step-5-5ks.j2') }}"
+
+...

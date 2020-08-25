@@ -1,0 +1,12 @@
+---
+
+- name: step-2a-l2-l3
+  hosts: 7ka-grp
+
+  tasks:
+
+  - name: Layer 2 and 3 work on core switches
+    cli_config:
+      config: "{{ lookup('template', 'step-2a-l2-l3.j2') }}"
+
+...
