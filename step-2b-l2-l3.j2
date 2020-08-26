@@ -1,0 +1,31 @@
+vlan 1514
+!
+vlan 1515
+!
+vlan 1516
+!
+interface Vlan1514
+ description VLAN 1514 - old vlan104 from VB1
+ no shutdown
+ mtu 9216
+ no ip redirects
+ ip address 10.151.104.2/24
+ no ip port-unreachable
+ ip router eigrp 24
+ ip passive-interface eigrp 24
+ hsrp 1
+  preempt
+  ip 10.151.104.1  
+!
+interface Vlan1515
+ description VLAN 1515 - old vlan105 from VB1  
+ no shutdown
+ mtu 9216 
+ no ip redirects
+ ip address 10.151.105.2/24
+ no ip port-unreachable
+ ip router eigrp 24
+ ip passive-interface eigrp 24
+ hsrp 1
+  preempt
+  ip 10.151.105.1
