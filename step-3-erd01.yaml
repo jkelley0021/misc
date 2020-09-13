@@ -1,12 +1,12 @@
 ---
 
-- name: step-3-erd01
+- name: flow2-step3-erd01
   hosts: erd01-grp
 
   tasks:
 
   - name: remove vlan and shut interface
     cli_config:
-      config: "{{ lookup('template', 'step-3-erd01.j2') }}"
+      config: "{{ lookup('template', 'flow2-step3-erd01.j2') }}"
 
 ...
