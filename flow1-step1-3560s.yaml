@@ -1,0 +1,12 @@
+---
+
+- name: flow1-step1 - F04-ucs-3560
+  hosts: 3560-grp
+
+  tasks:
+
+  - name: Shutdown the SVI for vlan 104
+    cli_config:
+      config: "{{ lookup('template', 'flow1-step1-3560s.j2') }}"
+
+...
