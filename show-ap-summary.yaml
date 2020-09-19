@@ -1,0 +1,12 @@
+---
+
+- name: show ap summary
+  hosts: 192.168.0.142
+
+  tasks:
+
+  - name: run show command on wlc
+    aireos_command:
+      commands: show ap summary
+
+...
