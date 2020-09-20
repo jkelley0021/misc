@@ -8,5 +8,13 @@
   - name: run show command on wlc
     aireos_command:
       commands: show ap summary
+  register: result
+
+  - name: Display result to terminal window
+    debug:
+      var: result.stdout_lines
+
+  - name: save output to local file
+    - local_action: copy content={{ result }} dest=//var/lib/awx/wlc/input.txt
 
 ...
