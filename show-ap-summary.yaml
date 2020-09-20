@@ -8,7 +8,7 @@
   - name: run show command on wlc
     aireos_command:
       commands: show ap summary
-  register: result
+    register: result
 
   - name: Display result to terminal window
     debug:
