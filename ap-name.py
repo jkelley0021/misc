@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-
 # the OS module allows you to interface with the underlying operating system
 import os
 # re — regular expression operations
