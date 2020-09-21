@@ -1,0 +1,12 @@
+---
+
+- name: parse out ap names from Job Template output
+  hosts: localhost
+  gather_facts: no
+  
+  tasks:
+
+  - name: run python script locally
+    local_action: command python3 ap-name.py
+
+...
