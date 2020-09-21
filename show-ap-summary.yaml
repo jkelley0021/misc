@@ -16,6 +16,6 @@
       var: result.stdout_lines
 
   - name: save output to local file
-    local_action: copy content={{  result  }} dest=/var/lib/awx/projects/_56__show_ap_summary/input.txt
+    local_action: copy content={{  result  }} dest=/var/lib/awx/wlc/input.txt
 
 ...
