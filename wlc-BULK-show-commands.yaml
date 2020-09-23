@@ -19,8 +19,8 @@
     - '{{  data.list  }}'
     delegate_to: localhost
 
-    - name: 802.11a
-      aireos_command:
+  - name: 802.11a
+    aireos_command:
       commands: show ap wlan 802.11a {ap-name}
     with_items:
     - '{{  data.list  }}'
