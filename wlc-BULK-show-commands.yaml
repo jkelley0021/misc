@@ -22,7 +22,7 @@
     aireos_command:
       commands: show ap wlan 802.11a {  item.ap-name  }
     with_items:
-    - '{{  data.list  }}'
+    - '{{  data  }}'
     delegate_to: localhost
 
 ...
