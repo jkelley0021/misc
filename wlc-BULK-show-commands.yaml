@@ -13,14 +13,14 @@
 
   - name: 802.11-abgn
     aireos_command:
-      commands: show ap wlan 802.11-abgn {ap-name}
+      commands: show ap wlan 802.11-abgn {ap-name.list}
     with_items:
     - '{{  data.list  }}'
     delegate_to: localhost
 
   - name: 802.11a
     aireos_command:
-      commands: show ap wlan 802.11a {ap-name}
+      commands: show ap wlan 802.11a {ap-name.list}
     with_items:
     - '{{  data.list  }}'
     delegate_to: localhost
