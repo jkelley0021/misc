@@ -8,7 +8,6 @@
   - name: read from output csv file
     read_csv:
       path: /var/lib/awx/wlc/output.csv
-    fieldnames: ap-name
     register: data
     delegate_to: localhost
 
