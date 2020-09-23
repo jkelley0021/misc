@@ -1,0 +1,29 @@
+---
+
+- name: BULK run commands against wlc
+  hosts: wlcipaddress
+
+  tasks:
+
+  - name: read from output csv file
+    read_csv:
+      path: /var/lib/awx/wlc/output.csv
+    fieldnames: ap-name
+    register: data
+    delegate_to: localhost
+
+  - name: 802.11-abgn
+    aireos_command:
+      commands: show ap wlan 802.11-abgn {ap-name}
+    with_items:
+    - '{{  data.list  }}'
+    delegate_to: localhost
+
+    - name: 802.11a
+      aireos_command:
+      commands: show ap wlan 802.11a {ap-name}
+    with_items:
+    - '{{  data.list  }}'
+    delegate_to: localhost
+
+...
