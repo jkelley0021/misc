@@ -1,7 +1,7 @@
 ---
 
 - name: BULK run commands against wlc
-  hosts: wlcipaddress
+  hosts: 192.168.0.142
 
   tasks:
 
