@@ -1,6 +1,6 @@
 from fireREST import Client
 
-client = Client(hostname='192.168.0.239', username='admin', password='Firetruck1!')
+client = Client(hostname='192.168.0.239', username='api-user', password='Firetruck1!')
 
 net_obj = { 
     'name': 'NetObjViaAPI-1',
