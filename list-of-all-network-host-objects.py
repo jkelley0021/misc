@@ -8,10 +8,10 @@ import requests
  
 server = "https://192.168.0.239"
  
-username = "admin"
+username = "api-user"
 if len(sys.argv) > 1:
     username = sys.argv[1]
-password = "sf"
+password = "Firetruck1!"
 if len(sys.argv) > 2:
     password = sys.argv[2]
                
