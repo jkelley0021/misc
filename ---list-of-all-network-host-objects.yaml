@@ -1,0 +1,12 @@
+---
+
+- name: firerest test
+  hosts: localhost
+  gather_facts: no
+  
+  tasks:
+
+  - name: run python script locally
+    local_action: command python3 list-of-all-network-host-objects.py
+
+...
