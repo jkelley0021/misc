@@ -8,10 +8,3 @@ net_obj = {
 }
 
 response = client.create_object('networks', net_obj)
-
-net_obj = { 
-    'name': 'NetObjViaAPI-2',
-    'value': '198.18.2.0/24',
-}
-
-response = client.create_object('networks', net_obj)
