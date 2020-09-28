@@ -14,6 +14,8 @@ net_obj = {
     'value': '5.5.5.5',
 }
 
+response = client.create_object('hosts', net_obj)
+
 net_obj = {
     'name': 'server-6',
     'value': '6.6.6.6',
