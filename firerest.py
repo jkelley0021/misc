@@ -7,11 +7,11 @@ net_obj = {
     'value': '4.4.4.4',
 }
 
-response = client.create_object('networks', net_obj)
+response = client.create_object('hosts', net_obj)
 
 net_obj = { 
     'name': 'server-5',
     'value': '5.5.5.5',
 }
 
-response = client.create_object('networks', net_obj)
+response = client.create_object('hosts', net_obj)
