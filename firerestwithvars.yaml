@@ -1,0 +1,11 @@
+---
+
+- name: firerest test
+  hosts: localhost
+  gather_facts: no
+  
+  tasks:
+
+  - name: run python script locally
+    local_action: command python3 firerestwithvars.py
+...
