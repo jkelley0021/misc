@@ -4,5 +4,5 @@ client = Client(hostname='192.168.0.239', username='api-user', password='Firetru
 
 
 obj_name = 'NetObjViaAPI-2'
-obj_id = client.get_object_id_by_name('networks', 'NetObjViaAPI-2')
-obj_payload = client.get_object('networks', obj_id).json
+obj_id = client.get_object_id_by_name('network', 'NetObjViaAPI-2')
+obj_payload = client.get_object('network', obj_id)
